@@ -6,7 +6,7 @@ bool Square::check()
     {
         return true;
     }
-    else { return false; }
+    else { throw std::domain_error("стороны не равны и/или углы не равны 90"); }
 }
 void Square::print_info()
 {

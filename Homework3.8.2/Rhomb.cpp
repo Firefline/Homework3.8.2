@@ -6,7 +6,7 @@ bool Rhomb::check()
     {
         return true;
     }
-    else { return false; }
+    else { throw std::domain_error("стороны не равны и/или углы A и C не равны и/или углы B и D не равны"); }
 }
 void Rhomb::print_info()
 {

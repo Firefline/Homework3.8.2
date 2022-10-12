@@ -1,6 +1,15 @@
 #include "domain_error.h"
-class domain_error : public std::exception
+#include "Figure.h"
+
+
+void DivisionByZeroException::exception()
 {
-public:
-	const char* what() const override { return "не был создан. Причина: "; }
-};
+	try
+	{
+		Figure::check;
+	}
+	catch (...)
+	{
+
+	}
+}

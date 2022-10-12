@@ -18,6 +18,6 @@ public:
     int get_B();
     int get_C();
     int get_D();
-    virtual char check();
+    virtual bool check();
     virtual void print_info();
 };

@@ -6,7 +6,7 @@ bool Quadrangle::check()
     {
         return true;
     }
-    else { return false; }
+    else { throw std::domain_error("количество сторон не равно 4 и/или сумма углов не равно 360"); }
 }
 void Quadrangle::print_info()
 {

@@ -1,5 +1,5 @@
 #include "Figure.h"
-#include "domain_error.h"
+
     std::string Figure::get_name()
     {
         return name;
@@ -40,25 +40,23 @@
     {
         return D;
     }
-    char Figure::check()
+    bool Figure::check()
     {
         if (sides_count == 0)
         {
-            std::cout << "создан";
+            return true;
         }
-        else {
-            throw domain_error();
-        }
+        else { throw std::domain_error("количество сторон не равно 3"); }
     }
     void Figure::print_info()
     {
-        try
+        std::cout << get_name() << ": " << std::endl;
+        if (check() == true)
         {
-            Figure::check();
+            std::cout << "Правильная" << std::endl;
         }
-        catch (const domain_error& ex)
-        {
-            std::cout << ex.what() << "количество сторон не равно 0" << std::endl;
+        else {
+            std::cout << "Неправильная" << std::endl;
         }
         std::cout << "Количество сторон: " << get_sides_count() << std::endl;
     }

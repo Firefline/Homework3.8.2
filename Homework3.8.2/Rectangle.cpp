@@ -6,7 +6,7 @@ bool Rectangle::check()
     {
         return true;
     }
-    else { return false; }
+    else { throw std::domain_error("стороны а и с не равны и/или стороны b и d не равны и/или углы не равны 90"); }
 }
 void Rectangle::print_info()
 {

@@ -6,7 +6,7 @@ bool Isosceles_triangle::check()
     {
         return true;
     }
-    else { return false; }
+    else { throw std::domain_error("стороны а и с не равны и/или углы А и С не равны"); }
 }
 void Isosceles_triangle::print_info()
 {

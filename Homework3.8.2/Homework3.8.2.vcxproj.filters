@@ -21,9 +21,6 @@
     <ClCompile Include="Equilateral_triangle.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
-    <ClCompile Include="Figure.cpp">
-      <Filter>Файлы ресурсов</Filter>
-    </ClCompile>
     <ClCompile Include="Isosceles_triangle.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
@@ -43,6 +40,9 @@
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
     <ClCompile Include="Square.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
+    <ClCompile Include="Figure.cpp">
       <Filter>Файлы ресурсов</Filter>
     </ClCompile>
     <ClCompile Include="Triangle.cpp">

@@ -7,7 +7,7 @@
         {
             return true;
         }
-        else { return false; }
+        else { throw std::domain_error("неверное количество сторон у треугольника и/или количество сторон не равно 3"); }
     }
     void Triangle::print_info()
     {

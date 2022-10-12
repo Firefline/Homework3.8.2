@@ -6,7 +6,7 @@ bool Equilateral_triangle::check()
     {
         return true;
     }
-    else { return false; }
+    else { throw std::domain_error("все стороны не равны и/или все углы не равны 60"); }
 }
 void Equilateral_triangle::print_info()
 {

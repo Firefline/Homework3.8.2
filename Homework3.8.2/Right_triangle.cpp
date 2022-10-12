@@ -6,7 +6,7 @@ bool Right_triangle::check()
     {
         return true;
     }
-    else { return false; }
+    else { throw std::domain_error("угол С не равен 90"); }
 }
 void Right_triangle::print_info()
 {
