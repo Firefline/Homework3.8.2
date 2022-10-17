@@ -12,34 +12,52 @@
 #include "Parallelogram.h"
 #include "Rectangle.h"
 #include "Rhomb.h"
+#include "domain_error.h"
 
 int main(int argc, char** argv)
 {
     setlocale(LC_ALL, "Russian");
 
-    Figure figure;
-    Triangle triangle(10, 20, 30, 50, 60, 70);
-    Right_triangle right_triangle(10, 20, 30, 50, 60);
-    Isosceles_triangle isosceles_triangle(10, 20, 50, 60);
-    Equilateral_triangle equilateral_triangle(30);
-    Quadrangle quadrangle(10, 20);
-    Square square(20);
-    Parallelogram parallelogram(20, 30, 30, 40);
-    Rectangle rectangle(10, 20);
-    Rhomb rhomb(30, 30, 40);
-
-    figure.print_info();
-    std::cout << std::endl;
-    triangle.print_info();
-    right_triangle.print_info();
-    isosceles_triangle.print_info();
-    equilateral_triangle.print_info();
-    quadrangle.print_info();
-    square.print_info();
-    parallelogram.print_info();
-    rectangle.print_info();
-    rhomb.print_info();
+    try
+    {
+        Figure figure;
+        figure.print_info();
+        figure.check();
+        Triangle triangle(10, 20, 30, 50, 60, 70);
+        triangle.print_info();
+        triangle.check();
+        Right_triangle right_triangle(10, 20, 30, 50, 60);
+        right_triangle.print_info();
+        right_triangle.check();
+        Isosceles_triangle isosceles_triangle(10, 20, 50, 60);
+        isosceles_triangle.print_info();
+        isosceles_triangle.check();
+        Equilateral_triangle equilateral_triangle(30);
+        equilateral_triangle.print_info();
+        equilateral_triangle.check();
+        Quadrangle quadrangle(10, 20);
+        quadrangle.print_info();
+        quadrangle.check();
+        Square square(20);
+        square.print_info();
+        square.check();
+        Parallelogram parallelogram(20, 30, 30, 40);
+        parallelogram.print_info();
+        parallelogram.check();
+        Rectangle rectangle(10, 20);
+        rectangle.print_info();
+        rectangle.check();
+        Rhomb rhomb(30, 30, 40);
+        rhomb.print_info();
+        rhomb.check();
+    }
+    catch (const std::exception& error)
+    {
+        std::cout << "не создан, причина - " << error.what() << std::endl;
+    }
+    return 0;
 }
+   
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
 // Отладка программы: F5 или меню "Отладка" > "Запустить отладку"

@@ -1,8 +1,8 @@
 #pragma once
 #include <iostream>
 
-class DivisionByZeroException : public std::exception
+class Exception : public std::domain_error
 {
 public:
-	void exception();
+		const char* what() const override { return "Попытка деления на 0"; }
 };

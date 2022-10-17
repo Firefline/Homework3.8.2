@@ -1,10 +1,10 @@
 #include "Isosceles_triangle.h"
 
-bool Isosceles_triangle::check()
+char Isosceles_triangle::check()
 {
     if (a == c && A == C)
     {
-        return true;
+        std::cout << "создан" << std::endl;
     }
     else { throw std::domain_error("стороны а и с не равны и/или углы А и С не равны"); }
 }

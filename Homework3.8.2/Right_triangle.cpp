@@ -1,10 +1,10 @@
 #include "Right_triangle.h"
 
-bool Right_triangle::check()
+char Right_triangle::check()
 {
     if (C == 90)
     {
-        return true;
+        std::cout << "создан" << std::endl;
     }
     else { throw std::domain_error("угол С не равен 90"); }
 }

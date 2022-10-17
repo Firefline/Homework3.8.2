@@ -40,23 +40,15 @@
     {
         return D;
     }
-    bool Figure::check()
+    char Figure::check()
     {
         if (sides_count == 0)
         {
-            return true;
+            std::cout << " создана" << std::endl;
         }
-        else { throw std::domain_error("количество сторон не равно 3"); }
+        else { throw std::domain_error("не создан, причина - количество сторон не равно 3"); }
     }
     void Figure::print_info()
     {
-        std::cout << get_name() << ": " << std::endl;
-        if (check() == true)
-        {
-            std::cout << "ѕравильна€" << std::endl;
-        }
-        else {
-            std::cout << "Ќеправильна€" << std::endl;
-        }
-        std::cout << " оличество сторон: " << get_sides_count() << std::endl;
+        std::cout << get_name();
     }
