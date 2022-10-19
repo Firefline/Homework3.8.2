@@ -1,6 +1,6 @@
 #include "Parallelogram.h"
 
-char Parallelogram::check()
+void Parallelogram::check()
 {
     if (a == c && b == d && A == C && B == D)
     {

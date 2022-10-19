@@ -1,6 +1,6 @@
 #include "Right_triangle.h"
 
-char Right_triangle::check()
+void Right_triangle::check()
 {
     if (C == 90)
     {

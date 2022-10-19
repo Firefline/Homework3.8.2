@@ -1,9 +1,13 @@
 #pragma once
 #include <iostream>
 #include "Figure.h"
+#include "domain_error.h"
+
 class Triangle : public Figure
 {
 public:
+    void check();
+    void print_info();
     Triangle(int a, int b, int c, int A, int B, int C) : Figure()
     {
         name = "Треугольник";
@@ -15,6 +19,4 @@ public:
         this->B = B;
         this->C = C;
     }
-    char check();
-    void print_info();
 };

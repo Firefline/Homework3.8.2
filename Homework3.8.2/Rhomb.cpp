@@ -1,6 +1,6 @@
 #include "Rhomb.h"
 
-char Rhomb::check()
+void Rhomb::check()
 {
     if (a == b && b == c && c == d && a == c && a == d && b == d && A == C && B == D)
     {

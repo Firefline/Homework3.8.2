@@ -1,6 +1,6 @@
 #include "Rectangle.h"
 
-char Rectangle::check()
+void Rectangle::check()
 {
     if (a == c && b == d && A == 90 && B == 90 && C == 90 && D == 90)
     {

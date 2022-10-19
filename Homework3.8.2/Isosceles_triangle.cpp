@@ -1,6 +1,6 @@
 #include "Isosceles_triangle.h"
 
-char Isosceles_triangle::check()
+void Isosceles_triangle::check()
 {
     if (a == c && A == C)
     {

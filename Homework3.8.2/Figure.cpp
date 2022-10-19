@@ -40,7 +40,7 @@
     {
         return D;
     }
-    char Figure::check()
+    void Figure::check()
     {
         if (sides_count == 0)
         {

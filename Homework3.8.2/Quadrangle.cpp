@@ -1,6 +1,6 @@
 #include "Quadrangle.h"
 
-char Quadrangle::check()
+void Quadrangle::check()
 {
     if (sides_count == 4 && (A + B + C + D == 360))
     {

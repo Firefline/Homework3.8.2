@@ -1,6 +1,6 @@
 #include "Equilateral_triangle.h"
 
-char Equilateral_triangle::check()
+void Equilateral_triangle::check()
 {
     if (a == b && b == c && a == c && A == 60 && B == 60 && C == 60)
     {
