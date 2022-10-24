@@ -4,7 +4,7 @@
 class Square : public Quadrangle
 {
 public:
-    Square(int a) : Quadrangle(0, 0)
+    Square(int a) : Quadrangle(a, 90)
     {
         name = " вадрат";
         sides_count = 4;

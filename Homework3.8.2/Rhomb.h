@@ -4,7 +4,7 @@
 class Rhomb : public Parallelogram
 {
 public:
-    Rhomb(int a, int A, int B) : Parallelogram(0, 0, 0, 0)
+    Rhomb(int a, int A, int B) : Parallelogram(a, a, A, B)
     {
         name = "Ромб";
         sides_count = 4;

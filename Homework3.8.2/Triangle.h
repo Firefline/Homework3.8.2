@@ -6,7 +6,7 @@
 class Triangle : public Figure
 {
 public:
-    void check();
+    //void check();
     void print_info();
     Triangle(int a, int b, int c, int A, int B, int C) : Figure()
     {
@@ -18,5 +18,7 @@ public:
         this->A = A;
         this->B = B;
         this->C = C;
+
+        print_info();
     }
 };

@@ -4,7 +4,7 @@
 class Parallelogram : public Quadrangle
 {
 public:
-    Parallelogram(int a, int b, int A, int B) : Quadrangle(0, 0)
+    Parallelogram(int a, int b, int A, int B) : Quadrangle(a, A)
     {
         name = "ֿאנאככוכמדנאלל";
         sides_count = 4;

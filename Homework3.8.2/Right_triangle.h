@@ -5,7 +5,7 @@
 class Right_triangle : public Triangle
 {
 public:
-    Right_triangle(int a, int b, int c, int A, int B) : Triangle(0, 0, 0, 0, 0, 0)
+    Right_triangle(int a, int b, int c, int A, int B) : Triangle(a, b, c, A, B, 90)
     {
         name = "Прямоугольный треугольник";
         sides_count = 3;
@@ -15,7 +15,9 @@ public:
         this->A = A;
         this->B = B;
         C = 90;
+
+        print_info();
     }
-    void check();
+    //void check();
     void print_info();
 };
