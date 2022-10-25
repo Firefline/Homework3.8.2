@@ -42,11 +42,10 @@
     }
     void Figure::check()
     {
-        if (sides_count == 0)
+        if (sides_count != 0)
         {
-            std::cout << " создана" << std::endl;
+            throw std::domain_error("не создан, причина - количество сторон не равно 3");
         }
-        else { throw std::domain_error("не создан, причина - количество сторон не равно 3"); }
     }
     void Figure::print_info()
     {

@@ -16,8 +16,8 @@ public:
         this->B = B;
         C = 90;
 
-        print_info();
+        check();
     }
-    //void check();
+    void check();
     void print_info();
 };

@@ -4,7 +4,7 @@
 class Rectangle : public Parallelogram
 {
 public:
-    Rectangle(int a, int b) : Parallelogram(a, b, 90, 90)
+    Rectangle(int a, int b) : Parallelogram(a, b, A, A)
     {
         name = "Прямоугольник";
         sides_count = 4;
@@ -16,6 +16,8 @@ public:
         B = A;
         C = A;
         D = A;
+
+        check();
     }
     void check();
     void print_info();

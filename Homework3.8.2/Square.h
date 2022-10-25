@@ -16,6 +16,8 @@ public:
         B = A;
         C = A;
         D = A;
+
+        check();
     }
     void check();
     void print_info();
